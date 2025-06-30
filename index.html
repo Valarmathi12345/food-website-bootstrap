@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE CREAM</title>
+    <link rel="stylesheet" href="food.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+  #input-box{
+    width: 300px;
+  }#order-list{
+    gap: 10px;
+    letter-spacing: 1.5px;
+   
+  }.nav-link:hover{
+     color: rgb(241, 16, 16);
+     text-decoration: underline;
+     font-weight: 10px;
+  }.nav-link{
+    font-weight: bold;
+  }#moveable:hover{
+    transition: 0.2s;
+    transform: scale(1.06);
+  }.nav-item:hover{
+    transition: 0.2s;
+    transform: scale(1.04);
+  }#body{
+    background-color: rgb(61, 53, 53);
+  }#food:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+  }#footer{
+            background-color: black;
+            color: hwb(0 100% 0%);
+            height: 450px !important;
+            width: 100%;
+            display: block;
+
+        }
+        .credits{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column;
+        }#contact{
+          height: 120px;
+          font-size: 17px;
+        }#text-contact{
+          color: purple;
+        }@media screen and (max-width:400px){
+          container-fluid{
+            justify-content: center;
+          }
+        }
+</style>
+<body>
+      <nav class="navbar navbar-expand-lg " id="body">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-danger fs-1 fw-bold ps-5 fst-italic" href="#">Yummy.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+           
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-dark ps-5 gap-4 " id="order-list">
+        <li class="nav-item">
+          <a class="nav-link active text-light fst-italic" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fst-italic" href="#">Menu</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-light fst-italic" href="#">Chefs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fst-italic" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fst-italic" href="#">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light fst-italic" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item fw-bold" href="#">Food</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Order</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Menu</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2"id="input-box" type="search" placeholder="Search" aria-label="Search"/>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner position-relative">
+    <div class="carousel-item active">
+      <img src="./pngtree-rustic-mediterranean-food-border-image_17262225 (1).jpg " class="d-block w-100 " alt="..." height="600px">
+      <div class="carousal-content position-absolute top-50 start-50 translate-middle text-light fw-bold fs-5 fst-italic"> 
+        <h1>Enjoy your Delecious  <span class="text-warning">Healthy Food</span> </h1>
+        <p class="pt-4">We are team of talented designers making <br> websites with Bootstrap</p>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="./top-view-table-full-delicious-food-composition_23-2149141353.avif" class="d-block w-100" alt="..." height="600px">
+      <div class="carousal-content position-absolute top-50 start-50 translate-middle text-light fw-bold fs-5 fst-italic"> 
+        <h1>Enjoy your Delecious Healthy Food</h1>
+        <p class="pt-4">We are team of talented designers making <br> websites with Bootstrap</p>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="./360_F_260128861_Q2ttKHoVw2VrmvItxyCVBnEyM1852MoJ.jpg" class="d-block w-100" alt="..." height="600px">
+      <div class="carousal-content position-absolute top-50 start-50 translate-middle text-light fw-bold fs-5 fst-italic">
+        <h1>Enjoy your Delecious Healthy Food</h1>
+        <p class="pt-4">We are team of talented designers making <br> websites with Bootstrap</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- <div class="card row" style="width: 18rem;">
+  <img src="./menu-item-1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div> -->
+
+<div class="container text-center pt-4 ">
+     <h1 class="fw-bold">Menu</h1>
+     <p class="fw-bold text-danger fst-italic fs-4">Starters</p>
+</div>
+ <div class="container-fluid">
+  <div class="row d-flex justify-content-center gap-5 mt-5 ">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./parrota.avif" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Parrota</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+   <i class="fa-solid fa-star" style="color: #f2eb07;"></i>
+      <i class="fa-solid fa-star" style="color: #f2eb07;"></i>
+      <i class="fa-solid fa-star" style="color: #f2eb07;"></i>
+    <div>
+    <a href="#" class="text-danger fw-bold fs-4">$5.95 </a>
+    </div>
+     <!-- Button trigger modal -->
+
+  </div>
+</div>
+
+  </div>
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./veg-biryani-in-pressure-cooker-61442869362-810.webp" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Veg Briyanai</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada</p>
+    <a href="#" class="text-danger fw-bold fs-4">$14.95</a>
+  </div>
+</div>
+
+  </div>
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./chapati.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">chapati</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$8.95</a>
+  </div>
+</div>
+  </div>
+</div>
+ </div>
+ <div class="container-fluid">
+ <div class="row d-flex justify-content-center gap-5 mt-5">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./thosa.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Thosa</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$12.95</a>
+  </div>
+</div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./shaw.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Shawarma</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$12.95</a>
+  </div>
+</div>
+
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./briyani.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Chicken Briyanai</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$9.95</a>
+  </div>
+</div>
+
+  </div>
+  </div>
+ </div>
+ </div>
+ <div class="container-fluid">
+ <div class="row d-flex justify-content-center gap-5 mt-5">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./curd.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Curd Rice</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$12.95</a>
+  </div>
+</div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./burger.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Burger</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$12.95</a>
+  </div>
+</div>
+
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="card" style="width: 18rem;" id="food">
+  <img src="./pizza.jpeg" class="card-img-top" alt="..."height="180px">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Pizza</h5>
+    <p class="card-text">Lorem, deren, trataro, filede, nerada </p>
+    <a href="#" class="text-danger fw-bold fs-4">$9.95</a>
+   <!-- Example single danger button -->
+
+  </div>
+</div>
+
+  </div>
+  </div>
+ </div>
+ </div>
+
+ <div class="text-center pt-4">
+    <h3  class="text-secondary">Chefs</h3>
+    <h1 class="text-dark fst-italic">Our <span class="text-warning">Professional Chefs</span></h1>
+
+ </div>
+ <div class="container-fluid">
+ <div class="row d-flex justify-content-center gap-5 mt-5">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+       <div class="card" style="width: 20rem;"id="moveable">
+  <img src="./chefs-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Walter White</h5>
+    <span class="text-secondary">Master Chef</span>
+    <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+  </div>
+</div>
+  </div>
+   <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+       <div class="card" style="width: 20rem;" id="moveable">
+  <img src="./chefs-2.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Sarah Jhonson</h5>
+    <span class="text-secondary">Patissier</span>
+    <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+  </div>
+</div>
+  </div>
+   <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+       <div class="card" style="width: 20rem;" id="moveable">
+  <img src="./chefs-3.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">William Anderson</h5>
+    <span class="text-secondary">Cook</span>
+    <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+  </div>
+</div>
+  </div>
+</div>
+<div class="section">
+   <h4 class="text-center pt-5 fst-italic">Events</h4>
+   <p class="text-center fw-bold fs-1 fst-italic text-danger">Celebration party</p>
+</div> 
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center gap-5 pt-4">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <img src="./events-2.jpg" alt="" height="400px" width="350px">
+    </div>
+     <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <img src="./events-3.jpg" alt=""  height="400px" width="350px">
+    </div>
+     <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <img src="./events-4.jpg" alt=""  height="400px" width="350px">
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row pt-4 justify-content-center gap-5">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <img src="./events-1.jpg" alt=""  height="400px" width="360px">
+    </div>
+     <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <img src="./Small-Party-Halls-in-Bangalore.jpg" alt=""  height="400px" width="360px">
+    </div>
+  </div>
+  </div>
+  <!-- contact -->
+   <div class="text-center pt-4">
+    <h3  class="text-secondary">Contact</h3>
+    <h1 class="fw-bold fst-italic text-danger" id="text-contact">Reception Booking</h1>
+ </div>
+  <div class="container-fluid">
+    <div class="row pt-5">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <img src="./reservation.jpg" alt="" height="500px" width="450px" class="ps-5">
+      </div>
+      <div class="col-12 col-sm-12 col-lg-6 ">
+        
+        <div class="input-group " id="contact-1">
+  <input type="text" class="form-control mt-4" placeholder="Name" aria-label="Username" aria-describedby="visible-addon">
+  <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
+</div>
+<div class="input-group ">
+  <input type="text" class="form-control mt-4" placeholder="Email" aria-label="Username" aria-describedby="visible-addon">
+  <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
+</div>
+<div class="input-group">
+  <input type="text" class="form-control mt-4" placeholder="Number" aria-label="Username" aria-describedby="visible-addon">
+  <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
+</div>
+<div class="input-group input-group-lg" >
+  <input type="text" class="form-control mt-4" placeholder="Message" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="contact">
+</div>
+<div class="btn d-flex justify-content-center mt-4">
+  <button type="button" class="btn btn-dark">Send Message</button>
+</div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- footer -->
+ <footer class="footer dark-background mt-2" id="footer">
+        <div class="container-fluid">
+            <div class="row justify-content-between pt-5 ps-5">
+                <div class="col-12 col-md-2 col-sm-6 col-lg-3 d-flex">
+                    <i class="fa-solid fa-location-dot pt-2" style="color: #fd310d;"></i>
+                    <div class="address">
+                        <h4 class="fs-4">Address</h4>
+                        <p>A108 Adam Street <br> New York, NY 535022</p>
+                    </div>
+                    </div>
+                     <div class="col-12 col-md-2 col-sm-6 col-lg-3 d-flex">
+                    <i class="fa-solid fa-phone-volume pt-2" style="color: #f13709;"></i>
+                    <div>
+            <h4 class="fs-4">Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
+              <strong>Email:</strong> <span>info@example.com</span><br>
+            </p>
+          </div>
+                    </div>
+                     <div class="col-12 col-md-2 col-sm-6 col-lg-3 d-flex">
+                    <i class="fa-solid fa-clock pt-2" style="color: #f03405;"></i>
+                    <div>
+            <h4 class="fs-4">Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+              <strong>Sunday</strong>: <span>Closed</span>
+            </p>
+          </div>
+                    </div>
+                     <div class="col-12 col-md-2 col-sm-6 col-lg-3">
+                   <h4 class="fs-4">Follow Us</h4>
+          <div class="social-links d-flex gap-4">
+            <a href="#" class="twitter fs-3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook fs-3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="instagram fs-3"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" class="linkedin fs-3"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+                    </div>
+                    
+
+            </div>
+
+        <!-- </div> -->
+        <!-- <div class="container-fluid"> -->
+                <div class="col-12 col-md-2 col-sm-6 col-lg-12 pt-5 text-center justify-content-center">
+                    <div class="credits d-flex justify-content-center align-item-center">
+                        <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span></p>
+                       <span> Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a></span> 
+      </div>
+                    </div>
+<!-- 
+            </div> -->
+
+        </div>
+    </footer>
+
+
+
+        
+     
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>    
+</body>
+</html>
